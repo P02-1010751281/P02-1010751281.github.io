@@ -49,7 +49,6 @@ theme_settings:
   katex: true # Enable if using math markup
   portfolio: false
   search: true
-  
   tags: false
 
 
