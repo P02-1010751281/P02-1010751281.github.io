@@ -43,15 +43,16 @@ theme_settings:
   wordpress:
   youtube:
 
-  # Scripts / Features 
+  # Scripts / Features
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname:
   katex: true # Enable if using math markup
   portfolio: false
   search: true
-  tags: true
   
-  
+  tags: false
+
+
   # Localization strings
   str_follow_on: "Follow on"
   str_rss_follow: "Follow RSS feed"
