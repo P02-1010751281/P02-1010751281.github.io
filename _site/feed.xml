@@ -5,7 +5,213 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>A website with blog posts and pages</description>
-    <pubDate>Mon, 12 Feb 2018 18:18:52 +0800</pubDate>
+    <pubDate>Wed, 14 Feb 2018 16:50:05 +0800</pubDate>
+    
+      <item>
+        <title>出发！我的笔记。GitHub-Pages与Jekyll</title>
+        <link>/2018/02/14/%E5%87%BA%E5%8F%91-%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0-GitHub-Pages%E4%B8%8EJekyll.html</link>
+        <guid isPermaLink="true">/2018/02/14/%E5%87%BA%E5%8F%91-%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0-GitHub-Pages%E4%B8%8EJekyll.html</guid>
+        <description>&lt;h2 id=&quot;题记&quot;&gt;题记&lt;/h2&gt;
+
+&lt;p&gt;作为一个萌新，在OI的道路上东一头西一头跌跌撞撞的前进时，我真的很不愿写Blog，一个原因是懒，还有一个原因是时间，最后一个原因是强迫症，看到广告就烦，看到乱七八糟的布局就难受。但现在发现不写Blog不行了，然后某位大佬给我姐安利了GitHub-Pages，于是我就在作死之路上狂奔了。&lt;/p&gt;
+
+&lt;h2 id=&quot;受众&quot;&gt;受众&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;刚入门的OIer&lt;/li&gt;
+  &lt;li&gt;有一定动手能力的&lt;/li&gt;
+  &lt;li&gt;对广告感到厌恶的&lt;/li&gt;
+  &lt;li&gt;计较排版的&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;准备&quot;&gt;准备&lt;/h2&gt;
+
+&lt;h3 id=&quot;软件援引httpblogcsdnnetu013553529articledetails54588010&quot;&gt;软件（援引：http://blog.csdn.net/u013553529/article/details/54588010）：&lt;/h3&gt;
+
+&lt;p&gt;Python，Ruby，Ruby-Dev，Jekyll，Bundle，Nodojs&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;需要安装的软件&lt;/th&gt;
+      &lt;th&gt;执行的命令 Ubuntu &amp;amp;&amp;amp; Debain&lt;/th&gt;
+      &lt;th&gt;执行的命令 macOS&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ruby&lt;/td&gt;
+      &lt;td&gt;sudo apt install ruby&lt;/td&gt;
+      &lt;td&gt;brew install ruby&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ruby-Dev&lt;/td&gt;
+      &lt;td&gt;sudo apt install ruby-dev&lt;/td&gt;
+      &lt;td&gt;没有这个包&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Jekyll&lt;/td&gt;
+      &lt;td&gt;sudo gem install jekyll&lt;/td&gt;
+      &lt;td&gt;gem install jekyll&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bundle&lt;/td&gt;
+      &lt;td&gt;sudo gem install bundle&lt;/td&gt;
+      &lt;td&gt;gem install bundle&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Nodejs&lt;/td&gt;
+      &lt;td&gt;sudo apt install nodejs&lt;/td&gt;
+      &lt;td&gt;brew install nodejs&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Git&lt;/td&gt;
+      &lt;td&gt;sudo apt install git&lt;/td&gt;
+      &lt;td&gt;brew install git&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Python&lt;/td&gt;
+      &lt;td&gt;sudo apt install python&lt;/td&gt;
+      &lt;td&gt;brew install python&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Tips：brew的安装：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/bin/ruby &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;curl &lt;span class=&quot;nt&quot;&gt;-fsSL&lt;/span&gt; https://raw.githubusercontent.com/Homebrew/install/master/install&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Tips：似乎不用安装Ruby-Dev，Jekyll，Nodejs，在macOS环境的时候，我并没有安装这三个，在后续的步骤中，Jekyll也会自动被安装。&lt;/p&gt;
+
+&lt;p&gt;Tips：安装完后建议更改一下RubyGems源（援引：https://gems.ruby-china.org/）&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem update &lt;span class=&quot;nt&quot;&gt;--system&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 这里请翻墙一下&lt;/span&gt;
+gem &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#显示RubyGems版本&lt;/span&gt;
+gem sources &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt; https://gems.ruby-china.org/ &lt;span class=&quot;nt&quot;&gt;--remove&lt;/span&gt; https://rubygems.org/
+gem sources &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#显示RubyGems源，确保只有 gems.ruby-china.org&lt;/span&gt;
+bundle config mirror.https://rubygems.org https://gems.ruby-china.org
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;github援引httpssegmentfaultcoma1190000002645623&quot;&gt;GitHub（援引：https://segmentfault.com/a/1190000002645623）：&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;生成SSH秘钥：&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen -t rsa -C
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;Tips：遇到一堆提示，一路Enter就行，但是如果以前生成过SSH秘钥，应该不必再Overwrite了。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;登陆Github, 添加 SSH：&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;打开&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/005ueW33ly1fofoitala3j305q08f0ss.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;点击&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/005ueW33ly1fofoj336zdj306d0duaa7.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;点击&lt;img src=&quot;http://wx3.sinaimg.cn/mw690/005ueW33ly1fofomxvgewj30lb01nweb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;复制id_rsa.pub里的东西到Key里，不用管Title，点击Add SSH key&lt;img src=&quot;http://wx4.sinaimg.cn/small/005ueW33ly1fofoqcfrkaj30lj0cf74h.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;测试：&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh &lt;span class=&quot;nt&quot;&gt;-T&lt;/span&gt; git@github.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;你将会看到：&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    The authenticity of host &lt;span class=&quot;s1&quot;&gt;'github.com (207.97.227.239)'&lt;/span&gt; can&lt;span class=&quot;s1&quot;&gt;'t be established.
+    RSA key fingerprint is **************************(一串数字与符号)
+    Are you sure you want to continue connecting (yes/no)?
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;选择 &lt;code class=&quot;highlighter-rouge&quot;&gt;yes&lt;/code&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Hi username! You&lt;span class=&quot;s1&quot;&gt;'ve successfully authenticated, but GitHub does not provide shell access.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;如果看到&lt;code class=&quot;highlighter-rouge&quot;&gt;Hi&lt;/code&gt;后面是你的用户名，就说明成功了。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;创建与本地环境搭建援引httpwwwpchouinfossgithubpage2014-07-04-build-github-blog-page-08html&quot;&gt;创建与本地环境搭建（援引：http://www.pchou.info/ssgithubPage/2014-07-04-build-github-blog-page-08.html）&lt;/h2&gt;
+
+&lt;h3 id=&quot;个人主页&quot;&gt;个人主页&lt;/h3&gt;
+
+&lt;p&gt;每个帐号只能有一个仓库来存放个人主页，而且仓库的名字必须是&lt;code class=&quot;highlighter-rouge&quot;&gt;username/username.github.io&lt;/code&gt;，这是特殊的命名约定。你可以通过&lt;code class=&quot;highlighter-rouge&quot;&gt;http://username.github.io&lt;/code&gt;来访问你的个人主页。&lt;/p&gt;
+
+&lt;p&gt;通过向导很容易创建一个仓库，并测试成功。不过，同样的，没有博客的结构。需要注意的个人主页的网站内容是在&lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;分支下的。&lt;/p&gt;
+
+&lt;p&gt;然后别忘了用如下命令clone到本地&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@github.com:username/username.github.io.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Tips:username是你的GitHub用户名（下文同），尽量不要用HTTPS的方式clone&lt;/p&gt;
+
+&lt;h3 id=&quot;安装bundle&quot;&gt;安装Bundle&lt;/h3&gt;
+
+&lt;p&gt;直接使用下面命令即可：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bundle
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;gemfile和bundle安装&quot;&gt;Gemfile和Bundle安装&lt;/h3&gt;
+
+&lt;p&gt;在更目录下创建一个叫&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;的文件，注意没有后缀，输入&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'https://ruby.taobao.org/'&lt;/span&gt;
+gem &lt;span class=&quot;s1&quot;&gt;'github-pages'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;保存后，在命令行中执行&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;命令会根据当前目录下的&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;，安装所需要的所有软件。这一步所安装的东西，可以说跟&lt;code class=&quot;highlighter-rouge&quot;&gt;github&lt;/code&gt;本身的环境是完全一致的，所以可以确保本地如果没有错误，上传后也不会有错误。而且可以在将来使用下面命令，随时更新环境，十分方便&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;使用下面命令，启动转化和本地服务：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;使用现成的模板援引httpwwwpchouinfossgithubpage2014-07-04-build-github-blog-page-08html&quot;&gt;使用现成的模板（援引：http://www.pchou.info/ssgithubPage/2014-07-04-build-github-blog-page-08.html）&lt;/h2&gt;
+
+&lt;p&gt;博客基于&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt;，而新手往往摸不着头脑，幸好有一些现成的模板可以直接使用：http://jekyllthemes.org&lt;/p&gt;
+
+&lt;p&gt;直接下载压缩包，也可以使用如下命令clone到本地：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone https://github.com/&lt;span class=&quot;k&quot;&gt;*******&lt;/span&gt;/&lt;span class=&quot;k&quot;&gt;********&lt;/span&gt;.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;把克隆下来的文件拷贝到你自己的目录就行了，这样你就有一个现成的网站结构了。&lt;/p&gt;
+
+&lt;h2 id=&quot;发布&quot;&gt;发布&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add --all
+git commit -m &quot;first commit&quot;
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 14 Feb 2018 00:00:00 +0800</pubDate>
+      </item>
     
   </channel>
 </rss>

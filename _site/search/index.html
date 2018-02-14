@@ -116,12 +116,6 @@
         </li>
         
         
-        <li>
-            <a class="clear" href="http://localhost:4000/tags">
-                <i class="fa fa-tags" aria-hidden="true"></i>
-            </a>
-        </li>
-        
         
     </ul>
         
@@ -156,6 +150,15 @@
             resultsContainer: document.getElementById('results-container'),
             json: [
                     
+                     
+                        {
+                          "title"    : "出发！我的笔记。GitHub-Pages与Jekyll",
+                          "category" : "",
+                          "tags"     : " Test, Ipsum, Markdown, Portfolio",
+                          "url"      : "/2018/02/14/%E5%87%BA%E5%8F%91-%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0-GitHub-Pages%E4%B8%8EJekyll.html",
+                          "date"     : "February 14, 2018",
+                          "content"  : "题记作为一个萌新，在OI的道路上东一头西一头跌跌撞撞的前进时，我真的很不愿写Blog，一个原因是懒，还有一个原因是时间，最后一个原因是强迫症，看到广告就烦，看到乱七八糟的布局就难受。但现在发现不写Blog不行了，然后某位大佬给我姐安利了GitHub-Pages，于是我就在作死之路上狂奔了。受众  刚入门的OIer  有一定动手能力的  对广告感到厌恶的  计较排版的准备软件（援引：http://blog.csdn.net/u013553529/article/details/54588010）：Python，Ruby，Ruby-Dev，Jekyll，Bundle，Nodojs            需要安装的软件      执行的命令 Ubuntu &amp;&amp; Debain      执行的命令 macOS                  Ruby      sudo apt install ruby      brew install ruby              Ruby-Dev      sudo apt install ruby-dev      没有这个包              Jekyll      sudo gem install jekyll      gem install jekyll              Bundle      sudo gem install bundle      gem install bundle              Nodejs      sudo apt install nodejs      brew install nodejs              Git      sudo apt install git      brew install git              Python      sudo apt install python      brew install python      Tips：brew的安装：/usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\"Tips：似乎不用安装Ruby-Dev，Jekyll，Nodejs，在macOS环境的时候，我并没有安装这三个，在后续的步骤中，Jekyll也会自动被安装。Tips：安装完后建议更改一下RubyGems源（援引：https://gems.ruby-china.org/）gem update --system # 这里请翻墙一下gem -v #显示RubyGems版本gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/gem sources -l #显示RubyGems源，确保只有 gems.ruby-china.orgbundle config mirror.https://rubygems.org https://gems.ruby-china.orgGitHub（援引：https://segmentfault.com/a/1190000002645623）：      生成SSH秘钥：    ssh-keygen -t rsa -C        Tips：遇到一堆提示，一路Enter就行，但是如果以前生成过SSH秘钥，应该不必再Overwrite了。        登陆Github, 添加 SSH：        打开        点击        点击        复制id_rsa.pub里的东西到Key里，不用管Title，点击Add SSH key        测试：    ssh -T git@github.com        你将会看到：        The authenticity of host 'github.com (207.97.227.239)' can't be established.    RSA key fingerprint is **************************(一串数字与符号)    Are you sure you want to continue connecting (yes/no)?        选择 yes        Hi username! You've successfully authenticated, but GitHub does not provide shell access.        如果看到Hi后面是你的用户名，就说明成功了。  创建与本地环境搭建（援引：http://www.pchou.info/ssgithubPage/2014-07-04-build-github-blog-page-08.html）个人主页每个帐号只能有一个仓库来存放个人主页，而且仓库的名字必须是username/username.github.io，这是特殊的命名约定。你可以通过http://username.github.io来访问你的个人主页。通过向导很容易创建一个仓库，并测试成功。不过，同样的，没有博客的结构。需要注意的个人主页的网站内容是在master分支下的。然后别忘了用如下命令clone到本地git clone git@github.com:username/username.github.io.gitTips:username是你的GitHub用户名（下文同），尽量不要用HTTPS的方式clone安装Bundle直接使用下面命令即可：$ gem install bundleGemfile和Bundle安装在更目录下创建一个叫Gemfile的文件，注意没有后缀，输入source 'https://ruby.taobao.org/'gem 'github-pages'保存后，在命令行中执行$ bundle install命令会根据当前目录下的Gemfile，安装所需要的所有软件。这一步所安装的东西，可以说跟github本身的环境是完全一致的，所以可以确保本地如果没有错误，上传后也不会有错误。而且可以在将来使用下面命令，随时更新环境，十分方便$ bundle update使用下面命令，启动转化和本地服务：$ bundle exec jekyll serve使用现成的模板（援引：http://www.pchou.info/ssgithubPage/2014-07-04-build-github-blog-page-08.html）博客基于jekyll，而新手往往摸不着头脑，幸好有一些现成的模板可以直接使用：http://jekyllthemes.org直接下载压缩包，也可以使用如下命令clone到本地：$ git clone https://github.com/*******/********.git把克隆下来的文件拷贝到你自己的目录就行了，这样你就有一个现成的网站结构了。发布git add --allgit commit -m \"first commit\"git push origin master"
+                        } 
                      ,
                      
                        {

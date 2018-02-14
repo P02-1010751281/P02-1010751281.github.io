@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- JQuery (used for bootstrap and jekyll search) -->
+    <script src="/assets/js/jquery-3.2.1.min.js" ></script>
+    
+    <!-- Main JS (navbar.js and katex_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/2018/02/14/%E5%87%BA%E5%8F%91-%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0-GitHub-Pages%E4%B8%8EJekyll.html">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="呼啸山庄" href="http://localhost:4000///feed.xml"/>
+
+    <!-- Font Awesome -->
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
+    
+
+    <!-- KaTeX 0.8.3 -->
+    
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/katex.min.css">
+    <script src="/assets/js/katex.min.js">
+    </script>
+    
+
+    <!-- Google Analytics -->
+    
+    
+    <!-- seo tags -->
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>出发！我的笔记。GitHub-Pages与Jekyll</title>
+<meta name="generator" content="Jekyll v3.7.2" />
+<meta property="og:title" content="出发！我的笔记。GitHub-Pages与Jekyll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="题记" />
+<meta property="og:description" content="题记" />
+<link rel="canonical" href="http://localhost:4000/2018/02/14/%E5%87%BA%E5%8F%91-%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0-GitHub-Pages%E4%B8%8EJekyll.html" />
+<meta property="og:url" content="http://localhost:4000/2018/02/14/%E5%87%BA%E5%8F%91-%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0-GitHub-Pages%E4%B8%8EJekyll.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-02-14T00:00:00+08:00" />
+<script type="application/ld+json">
+{"headline":"出发！我的笔记。GitHub-Pages与Jekyll","dateModified":"2018-02-14T00:00:00+08:00","datePublished":"2018-02-14T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/02/14/%E5%87%BA%E5%8F%91-%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0-GitHub-Pages%E4%B8%8EJekyll.html"},"url":"http://localhost:4000/2018/02/14/%E5%87%BA%E5%8F%91-%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0-GitHub-Pages%E4%B8%8EJekyll.html","description":"题记","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- Manual seo tags -->
+    <!--
+    <title>出发！我的笔记。GitHub-Pages与Jekyll | 呼啸山庄</title>
+    <meta name="description" content="题记">
+    -->
+</head>
+
+  <body>
+    <header class="site-header">
+    
+    <!-- Logo and title -->
+	<div class="branding">
+		<a href="/">
+			<img class="avatar" src="/assets/img/triangle.svg" alt=""/>
+		</a>
+
+		<h1 class="site-title">
+			<a href="/">呼啸山庄</a>
+		</h1>
+	</div>
+    
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+    
+    <!-- Menu -->
+    <ul>
+        
+        
+        
+        
+        <li>
+            <a class="clear" href="/about/">
+                About
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        
+        
+        <li>
+            <a class="clear" href="http://localhost:4000/search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+        
+        
+    </ul>
+        
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header id="main" style="background-image: url('/')">
+    <h1 id="%E5%87%BA%E5%8F%91%EF%BC%81%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0%E3%80%82GitHub-Pages%E4%B8%8EJekyll" class="title">出发！我的笔记。GitHub-Pages与Jekyll</h1>
+    <p class="meta">
+    February 14, 2018
+    
+    </p>
+  </header>
+  <section class="post-content"><h2 id="题记">题记</h2>
+
+<p>作为一个萌新，在OI的道路上东一头西一头跌跌撞撞的前进时，我真的很不愿写Blog，一个原因是懒，还有一个原因是时间，最后一个原因是强迫症，看到广告就烦，看到乱七八糟的布局就难受。但现在发现不写Blog不行了，然后某位大佬给我姐安利了GitHub-Pages，于是我就在作死之路上狂奔了。</p>
+
+<h2 id="受众">受众</h2>
+
+<ol>
+  <li>刚入门的OIer</li>
+  <li>有一定动手能力的</li>
+  <li>对广告感到厌恶的</li>
+  <li>计较排版的</li>
+</ol>
+
+<h2 id="准备">准备</h2>
+
+<h3 id="软件援引httpblogcsdnnetu013553529articledetails54588010">软件（援引：http://blog.csdn.net/u013553529/article/details/54588010）：</h3>
+
+<p>Python，Ruby，Ruby-Dev，Jekyll，Bundle，Nodojs</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>需要安装的软件</th>
+      <th>执行的命令 Ubuntu &amp;&amp; Debain</th>
+      <th>执行的命令 macOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ruby</td>
+      <td>sudo apt install ruby</td>
+      <td>brew install ruby</td>
+    </tr>
+    <tr>
+      <td>Ruby-Dev</td>
+      <td>sudo apt install ruby-dev</td>
+      <td>没有这个包</td>
+    </tr>
+    <tr>
+      <td>Jekyll</td>
+      <td>sudo gem install jekyll</td>
+      <td>gem install jekyll</td>
+    </tr>
+    <tr>
+      <td>Bundle</td>
+      <td>sudo gem install bundle</td>
+      <td>gem install bundle</td>
+    </tr>
+    <tr>
+      <td>Nodejs</td>
+      <td>sudo apt install nodejs</td>
+      <td>brew install nodejs</td>
+    </tr>
+    <tr>
+      <td>Git</td>
+      <td>sudo apt install git</td>
+      <td>brew install git</td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td>sudo apt install python</td>
+      <td>brew install python</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tips：brew的安装：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/ruby <span class="nt">-e</span> <span class="s2">"</span><span class="k">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p>Tips：似乎不用安装Ruby-Dev，Jekyll，Nodejs，在macOS环境的时候，我并没有安装这三个，在后续的步骤中，Jekyll也会自动被安装。</p>
+
+<p>Tips：安装完后建议更改一下RubyGems源（援引：https://gems.ruby-china.org/）</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem update <span class="nt">--system</span> <span class="c"># 这里请翻墙一下</span>
+gem <span class="nt">-v</span> <span class="c">#显示RubyGems版本</span>
+gem sources <span class="nt">--add</span> https://gems.ruby-china.org/ <span class="nt">--remove</span> https://rubygems.org/
+gem sources <span class="nt">-l</span> <span class="c">#显示RubyGems源，确保只有 gems.ruby-china.org</span>
+bundle config mirror.https://rubygems.org https://gems.ruby-china.org
+</code></pre></div></div>
+
+<h3 id="github援引httpssegmentfaultcoma1190000002645623">GitHub（援引：https://segmentfault.com/a/1190000002645623）：</h3>
+<ol>
+  <li>
+    <p>生成SSH秘钥：</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen -t rsa -C
+</code></pre></div>    </div>
+
+    <p>Tips：遇到一堆提示，一路Enter就行，但是如果以前生成过SSH秘钥，应该不必再Overwrite了。</p>
+  </li>
+  <li>
+    <p>登陆Github, 添加 SSH：</p>
+  </li>
+</ol>
+
+<ul>
+  <li>
+    <p>打开<img src="http://wx1.sinaimg.cn/mw690/005ueW33ly1fofoitala3j305q08f0ss.jpg" alt="" /></p>
+  </li>
+  <li>
+    <p>点击<img src="http://wx1.sinaimg.cn/mw690/005ueW33ly1fofoj336zdj306d0duaa7.jpg" alt="" /></p>
+  </li>
+  <li>
+    <p>点击<img src="http://wx3.sinaimg.cn/mw690/005ueW33ly1fofomxvgewj30lb01nweb.jpg" alt="" /></p>
+  </li>
+  <li>
+    <p>复制id_rsa.pub里的东西到Key里，不用管Title，点击Add SSH key<img src="http://wx4.sinaimg.cn/small/005ueW33ly1fofoqcfrkaj30lj0cf74h.jpg" alt="" /></p>
+  </li>
+</ul>
+
+<ol>
+  <li>
+    <p>测试：</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh <span class="nt">-T</span> git@github.com
+</code></pre></div>    </div>
+
+    <p>你将会看到：</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    The authenticity of host <span class="s1">'github.com (207.97.227.239)'</span> can<span class="s1">'t be established.
+    RSA key fingerprint is **************************(一串数字与符号)
+    Are you sure you want to continue connecting (yes/no)?
+</span></code></pre></div>    </div>
+
+    <p>选择 <code class="highlighter-rouge">yes</code></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Hi username! You<span class="s1">'ve successfully authenticated, but GitHub does not provide shell access.
+</span></code></pre></div>    </div>
+
+    <p>如果看到<code class="highlighter-rouge">Hi</code>后面是你的用户名，就说明成功了。</p>
+  </li>
+</ol>
+
+<h2 id="创建与本地环境搭建援引httpwwwpchouinfossgithubpage2014-07-04-build-github-blog-page-08html">创建与本地环境搭建（援引：http://www.pchou.info/ssgithubPage/2014-07-04-build-github-blog-page-08.html）</h2>
+
+<h3 id="个人主页">个人主页</h3>
+
+<p>每个帐号只能有一个仓库来存放个人主页，而且仓库的名字必须是<code class="highlighter-rouge">username/username.github.io</code>，这是特殊的命名约定。你可以通过<code class="highlighter-rouge">http://username.github.io</code>来访问你的个人主页。</p>
+
+<p>通过向导很容易创建一个仓库，并测试成功。不过，同样的，没有博客的结构。需要注意的个人主页的网站内容是在<code class="highlighter-rouge">master</code>分支下的。</p>
+
+<p>然后别忘了用如下命令clone到本地</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:username/username.github.io.git
+</code></pre></div></div>
+
+<p>Tips:username是你的GitHub用户名（下文同），尽量不要用HTTPS的方式clone</p>
+
+<h3 id="安装bundle">安装Bundle</h3>
+
+<p>直接使用下面命令即可：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem <span class="nb">install </span>bundle
+</code></pre></div></div>
+
+<h3 id="gemfile和bundle安装">Gemfile和Bundle安装</h3>
+
+<p>在更目录下创建一个叫<code class="highlighter-rouge">Gemfile</code>的文件，注意没有后缀，输入</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> <span class="s1">'https://ruby.taobao.org/'</span>
+gem <span class="s1">'github-pages'</span>
+</code></pre></div></div>
+
+<p>保存后，在命令行中执行</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle <span class="nb">install</span>
+</code></pre></div></div>
+
+<p>命令会根据当前目录下的<code class="highlighter-rouge">Gemfile</code>，安装所需要的所有软件。这一步所安装的东西，可以说跟<code class="highlighter-rouge">github</code>本身的环境是完全一致的，所以可以确保本地如果没有错误，上传后也不会有错误。而且可以在将来使用下面命令，随时更新环境，十分方便</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle update
+</code></pre></div></div>
+
+<p>使用下面命令，启动转化和本地服务：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<h2 id="使用现成的模板援引httpwwwpchouinfossgithubpage2014-07-04-build-github-blog-page-08html">使用现成的模板（援引：http://www.pchou.info/ssgithubPage/2014-07-04-build-github-blog-page-08.html）</h2>
+
+<p>博客基于<code class="highlighter-rouge">jekyll</code>，而新手往往摸不着头脑，幸好有一些现成的模板可以直接使用：http://jekyllthemes.org</p>
+
+<p>直接下载压缩包，也可以使用如下命令clone到本地：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone https://github.com/<span class="k">*******</span>/<span class="k">********</span>.git
+</code></pre></div></div>
+
+<p>把克隆下来的文件拷贝到你自己的目录就行了，这样你就有一个现成的网站结构了。</p>
+
+<h2 id="发布">发布</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add --all
+git commit -m "first commit"
+git push origin master
+</code></pre></div></div>
+
+</section>
+   
+   <!-- Tag list -->
+  
+  
+
+
+    <footer>
+        <div class="tag-list">
+        
+          <div class="meta">Tags</div>
+        
+            
+        
+          <a class="button" href="/tags#Ipsum">
+            <p><i class="fa fa-tag fa-fw"></i> Ipsum</p>
+          </a>
+        
+          <a class="button" href="/tags#Markdown">
+            <p><i class="fa fa-tag fa-fw"></i> Markdown</p>
+          </a>
+        
+          <a class="button" href="/tags#Portfolio">
+            <p><i class="fa fa-tag fa-fw"></i> Portfolio</p>
+          </a>
+        
+          <a class="button" href="/tags#Test">
+            <p><i class="fa fa-tag fa-fw"></i> Test</p>
+          </a>
+        
+        </div>
+    </footer>
+  
+
+    
+</article>
+
+<!-- Disqus -->
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  
+</div>
+
+    </div>
+    
+<footer class="site-footer">
+    <p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+</p>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                
+
+
+<li>
+	<a href="mailto:P02-1010751281@outlook.com" title="Email">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/P02-1010751281" title="Follow on GitHub">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+</footer>
+
+
+
+
+  </body>
+</html>

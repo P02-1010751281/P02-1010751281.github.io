@@ -1,4 +1,8 @@
-# 出发！我的笔记。GitHub-Pages与Jekyll
+---
+layout: post
+title: 出发！我的笔记。GitHub-Pages与Jekyll
+tags: [Test, Ipsum, Markdown, Portfolio]
+---
 
 ## 题记
 
