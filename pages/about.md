@@ -6,9 +6,7 @@ feature-img: "assets/img/pexels/circuit.jpeg"
 tags: [About, Test]
 ---
 
-Type on Strap is based on Type Theme, a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+一个用来存放在OI路上Blog，有时或许会有些别的。
 
-Head over to the [theme's documentation](https://github.io/sylhare/Type-on-Strap) for much more information about Type on Strap or to install this theme on your own Jekyll site.
+比如一些，好吧，我也不知道~~
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
- 
